@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+/* Fuentes personalizadas */
+@font-face {
+    font-family: 'Xtra';
+    src: url("../src/assets/fonts/Xtradex-axzg5.ttf") format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'zodiak';
+    src: url("../src/assets/fonts/zodiak.ttf") format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Estilos para títulos */
+.xtra-titulo {
+    font-family: "Xtra";
+    font-size: clamp(50px, 7vw, 300px); /* Tamaño responsivo */
+    color: gold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.xtra-sub, .xtra-sub-b {
+    font-family: "Xtra";
+    font-size: clamp(50px, 6vw, 50px); /* Tamaño responsivo */
+}
+
+.xtra-sub {
+    color: gold;
+}
+
+.xtra-sub-b {
+    color: rgb(0, 0, 0);
+}
+
+/* Márgenes personalizados */
+.my-10 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+/* Estilos para tarjetas de servicio */
+.service-card {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #dee2e6; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    margin: 1rem; /* Espaciado externo */
+    text-align: center; /* Centrar el texto */
+}
+
+.service-card h4 {
+    font-size: 1.5rem; /* Tamaño del subtítulo */
+    color: #007bff; /* Color del texto */
+}
+
+.service-card p {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #555; /* Color del texto */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: 1px solid #dee2e6; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Estilo de decoraciones (Glyph) */
+.spikes {
+    overflow: visible; /* Para IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333; /* Borde superior */
+    color: #333;
+    text-align: center;
+}
+
+.spikes::after {
+    content: "§"; /* Contenido del símbolo */
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    padding: 1rem 0; /* Espacio arriba y abajo */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #ccc; /* Color claro */
+}
+
+.nav-link:hover {
+    color: #fff; /* Color blanco al pasar el mouse */
+}
+
+
+/* Contenedor del iframe */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    border: 2px solid #000000; /* Color y grosor del borde */
+    border-radius: 8px; /* Bordes redondeados */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Quitar borde predeterminado del iframe */
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
