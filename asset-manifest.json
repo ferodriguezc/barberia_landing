@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/barberia_landing/static/css/main.ce2b0dbc.css",
+    "main.js": "/barberia_landing/static/js/main.74b9f2f9.js",
+    "static/js/453.342db065.chunk.js": "/barberia_landing/static/js/453.342db065.chunk.js",
+    "static/media/Xtradex-axzg5.ttf": "/barberia_landing/static/media/Xtradex-axzg5.7c60853c8430cdc830b9.ttf",
+    "static/media/zodiak.ttf": "/barberia_landing/static/media/zodiak.90b0c49c995f0ff77ede.ttf",
+    "index.html": "/barberia_landing/index.html",
+    "main.ce2b0dbc.css.map": "/barberia_landing/static/css/main.ce2b0dbc.css.map",
+    "main.74b9f2f9.js.map": "/barberia_landing/static/js/main.74b9f2f9.js.map",
+    "453.342db065.chunk.js.map": "/barberia_landing/static/js/453.342db065.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce2b0dbc.css",
+    "static/js/main.74b9f2f9.js"
+  ]
+}
