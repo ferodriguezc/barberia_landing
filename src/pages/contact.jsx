@@ -9,7 +9,7 @@ function Contact() {
     <div>
       <Row id='contact' className="d-flex flex-column justify-content-center align-items-center my-5 mx-5">
         <Col md={11} className="text-center">
-          <h3 className="mb-4 xtra-sub-b">Contáctanos</h3>
+          <h2 className="mb-4 xtra-sub-b">Contáctanos</h2>
           <Button 
             variant="success" 
             href={whatsappLink} 

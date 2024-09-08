@@ -10,6 +10,7 @@ import Separator from './component/separator';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap'; // Importa Container además de Row y Col
 
+
 import './App.css';
 
 function App() {

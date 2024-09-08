@@ -1,27 +1,64 @@
 /* Fuentes personalizadas */
 @font-face {
-    font-family: 'Xtra';
-    src: url("../src/assets/fonts/Xtradex-axzg5.ttf") format('truetype');
+    font-family: 'gara';
+    src: url("../public/fonts/gara.otf") format('opentype');
+    /* Formato 'otf' se especifica como 'opentype' */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
 }
+
 
 @font-face {
-    font-family: 'zodiak';
-    src: url("../src/assets/fonts/zodiak.ttf") format('truetype');
+    font-family: 'JetBrains Mono';
+    src: url('../public/fonts/JetBrainsMonoNL-Regular.ttf') format('truetype'),
+        url('../public/fonts/JetBrainsMono-Bold.ttf') format('truetype'),
+        /* Agrega más variantes si tienes */
+    ;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
 }
 
+
+
+
 /* Estilos para títulos */
+
+
+.mono-b {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 900;
+    font-size: clamp(20px, 6vw, 20px);
+    /* Tamaño responsivo */
+    color: gold;
+
+}
+
+.mono-n {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 100;
+    font-size: clamp(15px, 6vw, 15px);
+    /* Tamaño responsivo */
+
+}
+
 .xtra-titulo {
-    font-family: "Xtra";
-    font-size: clamp(50px, 7vw, 300px); /* Tamaño responsivo */
+    font-family: "gara";
+    font-size: clamp(50px, 7vw, 300px);
+    /* Tamaño responsivo */
     color: gold;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-.xtra-sub, .xtra-sub-b {
-    font-family: "Xtra";
-    font-size: clamp(50px, 6vw, 50px); /* Tamaño responsivo */
+.xtra-sub,
+.xtra-sub-b {
+    font-family: "gara";
+    font-size: clamp(20px, 6vw, 50px);
+    /* Tamaño responsivo */
 }
+
 
 .xtra-sub {
     color: gold;
@@ -39,59 +76,73 @@
 
 /* Estilos para tarjetas de servicio */
 .service-card {
-    background-color: #fff; /* Fondo blanco */
-    border: 1px solid #dee2e6; /* Borde gris claro */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 1rem; /* Espaciado interno */
-    margin: 1rem; /* Espaciado externo */
-    text-align: center; /* Centrar el texto */
+    background-color: #fff;
+    /* Fondo blanco */
+    border: 1px solid #dee2e6;
+    /* Borde gris claro */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 1rem;
+    /* Espaciado interno */
+    margin: 1rem;
+    /* Espaciado externo */
+    text-align: center;
+    /* Centrar el texto */
 }
 
 .service-card h4 {
-    font-size: 1.5rem; /* Tamaño del subtítulo */
-    color: #007bff; /* Color del texto */
+    font-size: 1.5rem;
+    /* Tamaño del subtítulo */
+    color: #007bff;
+    /* Color del texto */
 }
 
 .service-card p {
-    font-size: 1rem; /* Tamaño del texto */
-    color: #555; /* Color del texto */
+    font-size: 1rem;
+    /* Tamaño del texto */
+    color: #555;
+    /* Color del texto */
 }
 
-/* Estilos para las tarjetas */
-.card {
-    border: 1px solid #dee2e6; /* Borde gris claro */
-    border-radius: 8px; /* Bordes redondeados */
-}
 
-.card-img-top {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
+
+
 
 /* Estilo de decoraciones (Glyph) */
 .spikes {
-    overflow: visible; /* Para IE */
+    overflow: visible;
+    /* Para IE */
     padding: 0;
     border: none;
-    border-top: medium double #333; /* Borde superior */
+    border-top: medium double #333;
+    /* Borde superior */
     color: #333;
     text-align: center;
 }
 
 .spikes::after {
-    content: "§"; /* Contenido del símbolo */
+    content: "";
+    /* Vacío porque usaremos una imagen como fondo */
     display: inline-block;
+    width: 3em;
+    /* Ajusta el ancho según el tamaño de la imagen */
+    height: 5em;
+    /* Ajusta la altura según el tamaño de la imagen */
+    background-image: url('/public/images/icon_tijera.webp');
+    /* Ruta a tu imagen */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir el área */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita la repetición */
     position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
+    top: -2em;
+    /* Ajusta la posición vertical si es necesario */
+
 }
 
-/* Estilos para la barra de navegación */
-.navbar {
-    padding: 1rem 0; /* Espacio arriba y abajo */
-}
+
 
 .navbar-brand {
     font-size: 1.5rem;
@@ -102,31 +153,12 @@
 .nav-link {
     font-size: 1.2rem;
     margin-left: 1rem;
-    color: #ccc; /* Color claro */
+    color: #ccc;
+    /* Color claro */
 }
 
 .nav-link:hover {
-    color: #fff; /* Color blanco al pasar el mouse */
+    color: #fff;
+    /* Color blanco al pasar el mouse */
 }
 
-
-/* Contenedor del iframe */
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Proporción 16:9 */
-    height: 0;
-    overflow: hidden;
-    border: 2px solid #000000; /* Color y grosor del borde */
-    border-radius: 8px; /* Bordes redondeados */
-  }
-  
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Quitar borde predeterminado del iframe */
-  }
-  
